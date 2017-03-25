@@ -1,6 +1,6 @@
 {
   "name": "react-throbber",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Animated throbber React component",
   "main": "lib/index.js",
   "scripts": {
