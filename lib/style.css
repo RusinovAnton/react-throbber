@@ -1,0 +1,41 @@
+@keyframes rotator {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(270deg);
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dashoffset: 200;
+    }
+    50% {
+        stroke-dashoffset: calc(200 / 4);
+        transform: rotate(135deg);
+    }
+    100% {
+        stroke-dashoffset: 200;
+        transform: rotate(450deg);
+    }
+}
+
+.ReactThrobber__spinner {
+    display: inline-block;
+    vertical-align: top;
+    animation: rotator 1.4s linear infinite;
+}
+
+.ReactThrobber--block {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.ReactThrobber__path {
+    stroke-dasharray: 200;
+    stroke-dashoffset: 0;
+    transform-origin: center;
+    animation: dash 1.4s ease-in-out infinite;
+}
