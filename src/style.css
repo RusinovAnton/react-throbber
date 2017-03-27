@@ -12,7 +12,7 @@
         stroke-dashoffset: 200;
     }
     50% {
-        stroke-dashoffset: calc(200 / 4);
+        stroke-dashoffset: 50;
         transform: rotate(135deg);
     }
     100% {
@@ -21,19 +21,27 @@
     }
 }
 
-.ReactThrobber__spinner {
-    display: inline-block;
-    vertical-align: top;
-    animation: rotator 1.4s linear infinite;
-}
-
 .ReactThrobber--block {
     display: block;
     width: 100%;
     text-align: center;
 }
 
+.ReactThrobber--inline {
+    display: inline-block;
+    line-height: 1;
+}
+
+.ReactThrobber__spinner {
+    display: inline-block;
+    vertical-align: top;
+    width: 20px;
+    height: 20px;
+    animation: rotator 1.4s linear infinite;
+}
+
 .ReactThrobber__path {
+    stroke: #0a82ff;
     stroke-dasharray: 200;
     stroke-dashoffset: 0;
     transform-origin: center;
